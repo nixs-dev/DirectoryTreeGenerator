@@ -60,7 +60,7 @@ class Content:
 			self.set_contents(folders + files)
 		except PermissionError:
 			pass #IF DIRECTORY ACCESS IS DENIED, JUST IGNORE IT
-	
+
 	def __str__(self):
 		tree_str = self.get_tree_repr()
 		contents = self.get_contents()
